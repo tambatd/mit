@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://lit-savannah-59419.herokuapp.com/ -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="Title.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>Title</title>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <h1>Instructions</h1>
+        <hr />
+        <div class="InstructionInfo">
+          <p>
+            You will see a prompt below asking you to design an app. Using the
+            interface below, create a schema that represents a complete set of
+            tables you would need in order to create the app. For each table,
+            enter a set of fields for that table along with their types (int,
+            string). Types may be tables that you've created (student, teacher,
+            assignment).
+          </p>
+        </div>
+
+        <hr />
+        <div class="ExampleInfo">
+          <div class="ExampleInfoText">
+            <p>There is no correct answer. An example is shown below:</p>
+
+            <h2>
+              Example Prompt: I want a classroom management app that tracks
+              students, the assignments they've submitted, and the grades
+              they've earned on those assignments.
+            </h2>
+            <p>
+              Schema: This schema shows 4 tables: a student table, a submission
+              table, an assignment table, and a teacher table.
+            </p>
+            <ul>
+              <li>
+                Notice that in the student table, the types of "teacher",
+                "assignments", and "submissions" all reference other objects
+                (tables).
+              </li>
+              <li>
+                In addition, notice that since a student may have multiple
+                assignments, the type of "assignments" is a list.
+              </li>
+            </ul>
+          </div>
+          <div class="ExampleInfoImage">
+            <img
+              src="./Title_files/sample2.jpg"
+              alt="classroom management app schema"
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h1>
+        <u> Prompt </u>
+      </h1>
+      <div class="InstructionInfo">
+        <h1 class="PromptText">
+          I want an academic conference management system where I can track
+          papers, their authors, and their reviews.
+        </h1>
+      </div>
+
+      <hr />
+
+      <p><button>Add Table</button></p>
+      <button>Submit</button>
+      <!---->
+    </div>
+
+    <script src="./Title_files/vue.js"></script>
+    <script src="./Title_files/main.js"></script>
+  </body>
+</html>

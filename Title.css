@@ -1,0 +1,113 @@
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #f1f1f1;
+}
+
+p {
+  font-size: 15px;
+  color: #1f1f1f;
+}
+
+ul {
+  font-size: 15px;
+}
+.InstructionInfo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.InstructionInfo p {
+  max-width: 500px;
+}
+
+.InstructionInfo h1 {
+  max-width: 500px;
+  margin: 0;
+}
+
+hr {
+  border-top: 1px dashed #1f1f1f;
+}
+
+.ExampleInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.ExampleInfoText {
+  max-width: 500px;
+}
+.ExampleInfoImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.ExampleInfoImage img {
+  height: auto;
+  width: 300px;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  text-align: center;
+  width: 25%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  table-layout: fixed;
+  /* border-collapse: collapse; */
+  width: 25%;
+}
+
+td {
+  /* border: 1px solid #22bb37; */
+  text-align: center;
+  /* padding: 4px; */
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #b5c4bb;
+}
+
+th {
+  /* border: 1px solid #bd1010; */
+  text-align: center;
+  /* padding: 8px; */
+  background-color: #5ce294;
+}
+
+input {
+  width: 50%;
+}
+.PromptText {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 800px) {
+  .ExampleInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .ExampleInfoImage img {
+    padding-bottom: 15px;
+  }
+  li {
+    margin-right: 30px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  p {
+    font-size: 13px;
+  }
+}
